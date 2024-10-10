@@ -17,9 +17,9 @@
 
 html {
   font-family: 'Share Tech Mono', monospace;
-  background-color: #140013
-  background: rgb(41,0,39);
-  background: radial-gradient(circle, rgba(41,0,39,1) 0%, rgba(38,0,35,1) 23%, rgba(32,0,30,1) 33%, rgba(20,0,19,1) 67%);
+  background-color: #000514
+  background: rgb(0,10,41);
+  background: radial-gradient(circle, rgba(0,10,41,1) 0%, rgba(0,8,32,1) 23%, rgba(0,5,25,1) 33%, rgba(0,2,10,1) 67%);
   background-position-y: 900px;
   background-attachment: fixed;
   outline: 0;
@@ -43,32 +43,32 @@ body {
 }
 
 h1 {
-  color: #FFC2FB;
+  color: #D6E1FF;
   text-align: center;
 }
 
 h3 {
-    color: #FFC2FB;
+    color: #D6E1FF;
 }
 
 p {
-  color: #FFC2FB;
+  color: #D6E1FF;
   font-size: 15pt;
 }
 
 body ul {
-  color: #FFC2FB;
+  color: #D6E1FF;
   list-style: none;
   text-align: left;
   padding-inline-start: 0px;
 }
 
 hr {
-  border-color: #ff10f0;
+  border-color: #94B1FF;
 }
 
 summary {
-  color: #FFC2FB;
+  color: #D6E1FF;
 }
 
 #center-image {
@@ -107,7 +107,7 @@ summary {
 /* music */
 
 table {
-  color: #FF10F0;
+  color: #94B1FF;
   border-spacing: 2px;
   border: 0;
 }
@@ -119,7 +119,7 @@ table {
 /* punchout */
 
 .boxer {
-  color: #FFC2FB;
+  color: #D6E1FF;
   padding-right: 5px;
 }
 
@@ -135,15 +135,15 @@ table {
 /* links */
 
 a:link {
-  color: #B800AE;
+  color: #5c87ff;
 }
 
 a:visited {
-  color: #B800AE;
+  color: #4778ff;
 }
 
 a:hover {
-  color: #8F0088;
+  color: #4778ff;
 }
 
 a:-webkit-any-link {
@@ -159,31 +159,31 @@ a:-webkit-any-link {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  box-shadow : 0 1px 6px 0 #FF10F0;
+  box-shadow : 0 1px 6px 0 #94B1FF;
   max-width: 492px;
   position : relative;
-  background: rgb(255,112,248);
+  background: #C2D2FF;
 }
 
 .navbar a {
   float: left;
-  color: #8F0088;
+  color: #4778ff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   display: inline-block;
-  background: rgb(255,112,248);
-  background: linear-gradient(0deg, rgba(255,112,248,1) 0%, rgba(255,133,249,1) 49%, rgba(254,154,247,1) 51%, rgba(255,194,251,1) 100%);
+  background: rgb(214,225,255);
+  background: linear-gradient(0deg, rgba(148,177,255,1) 0%, rgba(153,180,255,1) 49%, rgba(189,207,255,1) 51%, rgba(214,225,255,1) 100%);
 }
 
 .navbar a:hover {
-  background: rgb(255,147,250);
-  background: linear-gradient(0deg, rgba(255,147,250,1) 0%, rgba(255,157,250,1) 49%, rgba(255,173,249,1) 51%, rgba(255,211,252,1) 100%);
+  background: rgb(173,195,255);
+  background: linear-gradient(0deg, rgba(173,195,255,1) 0%, rgba(180,200,255,1) 49%, rgba(216,226,255,1) 51%, rgba(227,234,255,1) 100%);
 }
 
 .navbar a.active {
-  background: rgb(255,166,251);
-  background: linear-gradient(0deg, rgba(255,166,251,1) 0%, rgba(255,177,251,1) 49%, rgba(255,197,251,1) 51%, rgba(255,236,254,1) 100%);
+  background: rgb(173,195,255);
+  background: linear-gradient(0deg, rgba(173,195,255,1) 0%, rgba(180,200,255,1) 49%, rgba(216,226,255,1) 51%, rgba(227,234,255,1) 100%);
 }
 
 /* disabling media code
@@ -253,8 +253,8 @@ header a:hover {
 
 #title pre {
   display: flex;
-  color: #FF10F0;
-  text-shadow: 1px 0 10px #FF10F0;
+  color: #94B1FF;
+  text-shadow: 1px 0 10px #94B1FF;
   font-size: 0.6vw;
   justify-content: center;
   animation: fade-in 2s;
@@ -264,11 +264,11 @@ header a:hover {
 /* Scrolling text header */
 
 #scroll-container {
-  border: 6px double #FF10F0;
+  border: 6px double #94b1FF;
   border-radius: 10px;
   overflow: hidden;
-  background: #000008;
-  box-shadow : 0 1px 6px 0 #FF10F0;
+  background: #000A29;
+  box-shadow : 0 1px 6px 0 #94B1FF;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1500px;
@@ -286,7 +286,7 @@ header a:hover {
 #scroll-text {
   white-space: nowrap;
   text-align: center;
-  color: #FF70F8;
+  color: #94B1FF;
   font-size: 200%;
   /* animation properties */
   -moz-transform: translateX(-100%);
@@ -321,9 +321,9 @@ header a:hover {
 
 .content, .foldercontent {
   margin     : 20px;
-  background : #0008;
-  border     : 1px #FF10F0 solid;
-  box-shadow : 0 1px 6px 0 #FF10F0;
+  background : #000A29;
+  border     : 1px #94B1FF solid;
+  box-shadow : 0 1px 6px 0 #94B1FF;
   overflow-x : hidden;
 }
 
@@ -378,7 +378,7 @@ header a:hover {
 
 .wintitle, .foldertitle, .doctitle {
     /*background     : #FF10F0;*/
-    background: rgb(255,112,248);
+    background: rgb(148,177,255);
     background: linear-gradient(0deg, rgba(255,112,248,1) 0%, rgba(255,133,249,1) 49%, rgba(254,154,247,1) 51%, rgba(255,194,251,1) 100%);
     color          : black;
     margin         : 0px;
@@ -391,7 +391,7 @@ header a:hover {
     text-align     : left;
     font-size      : 8pt;
     font-weight    : bold;
-    box-shadow     : 0 0 12px #ff10f0;
+    box-shadow     : 0 0 12px #94B1FF;
 }
 
 .doctitle {
@@ -402,15 +402,15 @@ header a:hover {
   padding-bottom : 1pt;
   width          : auto;
   transition     : background .2s, color .2s;
-  box-shadow     : inset 0 0 12px #ff10f0;
-  border         : 1px #ff10f0 solid;
+  box-shadow     : inset 0 0 12px #9f1bff;
+  border         : 1px #941bff solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .foldertitle:hover {
-  background    : #140013;
-  color         : #FFC2FB;
+  background    : #000a29;
+  color         : #d6e1ff;
 }
 
 .folder {
@@ -431,7 +431,7 @@ header a:hover {
 }
 
 .folder div {
-  box-shadow : inset 0 0 12px #ff10f0;
+  box-shadow : inset 0 0 12px #9fb1ff;
 }
 
 .folderarrow {
@@ -443,5 +443,5 @@ header a:hover {
 }
 
 .foldertitle:hover .folderarrow {
-  color : #FFC2FB;
+  color : #d6e1ff;
 }
