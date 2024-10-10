@@ -90,6 +90,7 @@ summary {
 /* footer */
 
 .footer {
+  margin-top: 20px;
   display: block;
 }
 
@@ -167,7 +168,7 @@ a:-webkit-any-link {
 
 .navbar a {
   float: left;
-  color: #4778ff;
+  color: #000514;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -247,7 +248,23 @@ header a:hover {
 
 #home img {
   position: absolute;
+  margin-left: 25px;
 }
+
+#home img:hover {
+  animation: rotateImage 2s infinite;
+}
+
+@keyframes rotateImage {
+            0% {
+                transform: rotate3d(0, 0, 0, 0deg);
+            }
+
+            100% {
+                transform: rotate3d(0, 0, 1, 360deg);
+            }
+        }
+
 
 /* ASCII art header */
 
@@ -255,7 +272,7 @@ header a:hover {
   display: flex;
   color: #94B1FF;
   text-shadow: 1px 0 10px #94B1FF;
-  font-size: 0.6vw;
+  font-size: 1.0vw;
   justify-content: center;
   animation: fade-in 2s;
     animation-timing-function: cubic-bezier(1, 0, 1, 0);
