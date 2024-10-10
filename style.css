@@ -1,0 +1,447 @@
+:root {
+  --neon: #FF10F0;
+  --black: #000008;
+  --deep: #140013;
+  --white: #FFC2FB;
+  --light: #FF70F8;
+  --fadedpink: #C14F9E;
+
+  --shadow-pink: 0 6px 25px 0 #FF10F0;
+}
+
+/* Fonts go here */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* boilerplate CSS, style stuff */
+
+html {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #140013
+  background: rgb(41,0,39);
+  background: radial-gradient(circle, rgba(41,0,39,1) 0%, rgba(38,0,35,1) 23%, rgba(32,0,30,1) 33%, rgba(20,0,19,1) 67%);
+  background-position-y: 900px;
+  background-attachment: fixed;
+  outline: 0;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+body {
+  text-align: left;
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(0.2px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #FFC2FB;
+  text-align: center;
+}
+
+h3 {
+    color: #FFC2FB;
+}
+
+p {
+  color: #FFC2FB;
+  font-size: 15pt;
+}
+
+body ul {
+  color: #FFC2FB;
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 0px;
+}
+
+hr {
+  border-color: #ff10f0;
+}
+
+summary {
+  color: #FFC2FB;
+}
+
+#center-image {
+  display: block;
+  text-align: center;
+}
+
+/* social bar */
+
+#social {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#social a {
+  margin: 20px;
+}
+
+/* footer */
+
+.footer {
+  display: block;
+}
+
+.footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/* music */
+
+table {
+  color: #FF10F0;
+  border-spacing: 2px;
+  border: 0;
+}
+
+.song {
+  padding-left: 5px;
+}
+
+/* punchout */
+
+.boxer {
+  color: #FFC2FB;
+  padding-right: 5px;
+}
+
+.time {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.code {
+  padding-left: 5px;
+}
+
+/* links */
+
+a:link {
+  color: #B800AE;
+}
+
+a:visited {
+  color: #B800AE;
+}
+
+a:hover {
+  color: #8F0088;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+/* navigation bar */
+
+.navbar {
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  box-shadow : 0 1px 6px 0 #FF10F0;
+  max-width: 492px;
+  position : relative;
+  background: rgb(255,112,248);
+}
+
+.navbar a {
+  float: left;
+  color: #8F0088;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  background: rgb(255,112,248);
+  background: linear-gradient(0deg, rgba(255,112,248,1) 0%, rgba(255,133,249,1) 49%, rgba(254,154,247,1) 51%, rgba(255,194,251,1) 100%);
+}
+
+.navbar a:hover {
+  background: rgb(255,147,250);
+  background: linear-gradient(0deg, rgba(255,147,250,1) 0%, rgba(255,157,250,1) 49%, rgba(255,173,249,1) 51%, rgba(255,211,252,1) 100%);
+}
+
+.navbar a.active {
+  background: rgb(255,166,251);
+  background: linear-gradient(0deg, rgba(255,166,251,1) 0%, rgba(255,177,251,1) 49%, rgba(255,197,251,1) 51%, rgba(255,236,254,1) 100%);
+}
+
+/* disabling media code
+
+@media only screen and (min-width: 1040px) {
+  .navbar {
+        max-width   : 544px;
+        width       : 544px;
+        margin-left : auto;
+        margin-right: auto;
+  }
+}
+
+*/
+
+/* old header code
+
+header {
+  background-color: #FF70F8;
+  text-shadow: 0 0 20px #FF10F0;
+  position: fixed;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 25px 0 #FF10F0;
+  animation: fade-in 2s;
+    animation-timing-function: cubic-bezier(1, 0, 1, 0);
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header a {
+  color: #8F0088 !important;
+  margin-left: 55px;
+}
+
+header a:hover {
+  color: #140013 !important;
+}
+
+*/
+
+#top {
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#home {
+  display: flex;
+}
+
+#home img {
+  position: absolute;
+}
+
+/* ASCII art header */
+
+#title pre {
+  display: flex;
+  color: #FF10F0;
+  text-shadow: 1px 0 10px #FF10F0;
+  font-size: 0.6vw;
+  justify-content: center;
+  animation: fade-in 2s;
+    animation-timing-function: cubic-bezier(1, 0, 1, 0);
+}
+
+/* Scrolling text header */
+
+#scroll-container {
+  border: 6px double #FF10F0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000008;
+  box-shadow : 0 1px 6px 0 #FF10F0;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 1500px;
+}
+
+@media only screen and (min-width: 1540px) {
+  #scroll-container {
+        max-width   : 1500px;
+        width       : 1500px;
+        margin-left : auto;
+        margin-right: auto;
+  }
+}
+
+#scroll-text {
+  white-space: nowrap;
+  text-align: center;
+  color: #FF70F8;
+  font-size: 200%;
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -moz-animation: my-animation 8s linear infinite;
+  -webkit-animation: my-animation 8s linear infinite;
+  animation: my-animation 15s cubic-bezier(0, 1, 1, 0) infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+/* Content Boxes from sigma-one sinewave */
+
+.content, .foldercontent {
+  margin     : 20px;
+  background : #0008;
+  border     : 1px #FF10F0 solid;
+  box-shadow : 0 1px 6px 0 #FF10F0;
+  overflow-x : hidden;
+}
+
+.content {
+  overflow-y      : auto;
+  border-radius : 10px;
+}
+
+@media only screen and (min-width: 1540px) {
+  .content {
+        max-width   : 1500px;
+        width       : 1500px;
+        margin-left : auto;
+        margin-right: auto;
+  }
+}
+
+.foldercontent {
+  margin : 0;
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius : 10px;
+}
+
+.foldercontent img {
+  height: 400px;
+}
+
+.content p {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  margin-top    : 20pt;
+  margin-bottom : 20pt;
+}
+
+.content ul {
+  margin-top    : 20pt;
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  margin-bottom : 20pt;
+}
+
+.content li {
+  margin-bottom : 20px;
+}
+
+.content table {
+  margin-top    : 20pt;
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  margin-bottom : 20pt;
+}
+
+.wintitle, .foldertitle, .doctitle {
+    /*background     : #FF10F0;*/
+    background: rgb(255,112,248);
+    background: linear-gradient(0deg, rgba(255,112,248,1) 0%, rgba(255,133,249,1) 49%, rgba(254,154,247,1) 51%, rgba(255,194,251,1) 100%);
+    color          : black;
+    margin         : 0px;
+    padding-bottom : 2.66px;
+    padding-left   : 7px;
+    display        : block;
+    width          : 100%;
+    overflow-y     : hidden;
+    max-height     : 10pt;
+    text-align     : left;
+    font-size      : 8pt;
+    font-weight    : bold;
+    box-shadow     : 0 0 12px #ff10f0;
+}
+
+.doctitle {
+  width : auto;
+}
+
+.foldertitle {
+  padding-bottom : 1pt;
+  width          : auto;
+  transition     : background .2s, color .2s;
+  box-shadow     : inset 0 0 12px #ff10f0;
+  border         : 1px #ff10f0 solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.foldertitle:hover {
+  background    : #140013;
+  color         : #FFC2FB;
+}
+
+.folder {
+  box-shadow : none;
+  margin    : 30pt;
+}
+
+.folderarrow::after {
+  content : "+";
+}
+
+.folder[open=""] .foldertitle .folderarrow::after {
+  content : "-";
+}
+
+.folder[open=""] div {
+  animation : fadein .1s linear;
+}
+
+.folder div {
+  box-shadow : inset 0 0 12px #ff10f0;
+}
+
+.folderarrow {
+  float : right;
+  color : #black;
+  background : #00000000;
+  margin-right : 5pt;
+  font-size : 9pt;
+}
+
+.foldertitle:hover .folderarrow {
+  color : #FFC2FB;
+}
