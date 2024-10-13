@@ -83,14 +83,14 @@ summary {
   text-align: center;
 }
 
-#social a {
-  margin: 20px;
+#social img {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* footer */
 
 .footer {
-  margin-top: 20px;
   display: block;
 }
 
@@ -396,7 +396,7 @@ header a:hover {
 .wintitle, .foldertitle, .doctitle {
     /*background     : #FF10F0;*/
     background: rgb(148,177,255);
-    background: linear-gradient(0deg, rgba(255,112,248,1) 0%, rgba(255,133,249,1) 49%, rgba(254,154,247,1) 51%, rgba(255,194,251,1) 100%);
+    background: linear-gradient(0deg, rgba(148,177,255,1) 0%, rgba(153,180,255,1) 49%, rgba(189,207,255,1) 51%, rgba(214,225,255,1) 100%);
     color          : black;
     margin         : 0px;
     padding-bottom : 2.66px;
