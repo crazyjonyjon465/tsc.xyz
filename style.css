@@ -105,6 +105,12 @@ summary {
   text-align: center;
 }
 
+.button img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* music */
 
 table {
