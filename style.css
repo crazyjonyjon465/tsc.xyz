@@ -5,7 +5,6 @@
   --white: #FFC2FB;
   --light: #FF70F8;
   --fadedpink: #C14F9E;
-
   --shadow-pink: 0 6px 25px 0 #FF10F0;
 }
 
@@ -17,7 +16,7 @@
 
 html {
   font-family: 'Share Tech Mono', monospace;
-  background-color: #000514
+  background-color: #000514;
   background: rgb(0,10,41);
   background: radial-gradient(circle, rgba(0,10,41,1) 0%, rgba(0,8,32,1) 23%, rgba(0,5,25,1) 33%, rgba(0,2,10,1) 67%);
   background-position-y: 900px;
@@ -44,10 +43,13 @@ body {
 
 h1 {
   color: #D6E1FF;
-  text-align: center;
 }
 
 h3 {
+    color: #D6E1FF;
+}
+
+h5 {
     color: #D6E1FF;
 }
 
@@ -117,6 +119,7 @@ table {
   color: #94B1FF;
   border-spacing: 2px;
   border: 0;
+  float: left;
 }
 
 .song {
@@ -267,7 +270,7 @@ header a:hover {
             }
 
             100% {
-                transform: rotate3d(0, 0, 1, 360deg);
+                transform: rotate3d(0, 0, -1, 360deg);
             }
         }
 
@@ -381,6 +384,20 @@ header a:hover {
   margin-bottom : 20pt;
 }
 
+.content h1 {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  margin-top    : 20pt;
+  margin-bottom : 20pt;
+}
+
+.content h5 {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  margin-top    : 20pt;
+  margin-bottom : 20pt;
+}
+
 .content ul {
   margin-top    : 20pt;
   margin-left   : 20pt;
@@ -459,7 +476,7 @@ header a:hover {
 
 .folderarrow {
   float : right;
-  color : #black;
+  color: #000000;
   background : #00000000;
   margin-right : 5pt;
   font-size : 9pt;
@@ -467,4 +484,58 @@ header a:hover {
 
 .foldertitle:hover .folderarrow {
   color : #d6e1ff;
+}
+
+/* Attempt at article tiles */
+.blogcontent {
+  display: grid;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  justify-content: center;
+  gap: 22px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  border-block-end: dotted #94b1FF;
+}
+
+.post a {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+  
+  color: #d6e1ff;
+  font-size: 32px;
+}
+
+.post a:visited {
+  color: #94b1FF
+}
+
+.post a:hover {
+  color: #94b1FF
+}
+
+.post p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.post h1 {
+  margin-bottom: 0;
+}
+
+.post h5 {
+  margin-top: 0;
+  float: right;
+  justify-content: flex-end;
+}
+
+.post img {
+  margin: auto;
 }
