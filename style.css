@@ -46,11 +46,11 @@ h1 {
 }
 
 h3 {
-    color: #D6E1FF;
+  color: #D6E1FF;
 }
 
 h5 {
-    color: #D6E1FF;
+  color: #D6E1FF;
 }
 
 p {
@@ -172,7 +172,8 @@ a:-webkit-any-link {
   box-shadow : 0 1px 6px 0 #94B1FF;
   max-width: 492px;
   position : relative;
-  background: #C2D2FF;
+  /* background: #C2D2FF; */
+  background: linear-gradient(0deg, rgba(148,177,255,1) 0%, rgba(153,180,255,1) 49%, rgba(189,207,255,1) 51%, rgba(214,225,255,1) 100%);
 }
 
 .navbar a {
@@ -194,6 +195,15 @@ a:-webkit-any-link {
 .navbar a.active {
   background: rgb(173,195,255);
   background: linear-gradient(0deg, rgba(173,195,255,1) 0%, rgba(180,200,255,1) 49%, rgba(216,226,255,1) 51%, rgba(227,234,255,1) 100%);
+}
+
+.button {
+  text-align: center;
+}
+
+.button img {
+  display: inline;
+  position: relative;
 }
 
 /* disabling media code
@@ -409,12 +419,22 @@ header a:hover {
   margin-bottom : 20px;
 }
 
+.content audio {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+}
+
+.content video {
+  margin-left   : 20pt;
+  margin-right  : 20pt;
+}
+
 .content table {
   margin-top    : 20pt;
   margin-left   : 20pt;
   margin-right  : 20pt;
   margin-bottom : 20pt;
-  border: 1px solid #94b1ff
+  border: 1px solid #94b1ff;
 }
 
 .foldercontent table, th, td {
@@ -506,14 +526,14 @@ header a:hover {
 }
 
 .post {
-  display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   border-block-end: dotted #94b1FF;
 }
 
 .post a {
-  margin-left   : 20pt;
-  margin-right  : 20pt;
+  margin-left   : 10pt;
+  margin-right  : 10pt;
   
   color: #d6e1ff;
   font-size: 32px;
@@ -530,6 +550,8 @@ header a:hover {
 .post p {
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left   : 10pt;
+  margin-right  : 10pt;
 }
 
 .post h1 {
@@ -539,9 +561,12 @@ header a:hover {
 .post h5 {
   margin-top: 0;
   float: right;
-  justify-content: flex-end;
 }
 
 .post img {
-  margin: auto;
+  margin-top: auto;
+  margin-left   : 10pt;
+  margin-right  : 10pt;
+  margin-bottom: 5pt;
+  max-width: 100%;
 }
