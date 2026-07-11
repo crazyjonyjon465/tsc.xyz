@@ -62,7 +62,7 @@ body ul {
   color: #D6E1FF;
   list-style: none;
   text-align: left;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 
 hr {
@@ -182,7 +182,6 @@ a:-webkit-any-link {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: inline-block;
   background: rgb(214,225,255);
   background: linear-gradient(0deg, rgba(148,177,255,1) 0%, rgba(153,180,255,1) 49%, rgba(189,207,255,1) 51%, rgba(214,225,255,1) 100%);
 }
@@ -447,7 +446,7 @@ header a:hover {
     background: rgb(148,177,255);
     background: linear-gradient(0deg, rgba(148,177,255,1) 0%, rgba(153,180,255,1) 49%, rgba(189,207,255,1) 51%, rgba(214,225,255,1) 100%);
     color          : black;
-    margin         : 0px;
+    margin         : 0;
     padding-bottom : 2.66px;
     padding-left   : 7px;
     display        : block;
@@ -569,4 +568,30 @@ header a:hover {
   margin-right  : 10pt;
   margin-bottom: 5pt;
   max-width: 100%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000A29;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94b1ff;
+}
+
+/* video player */
+video {
+  border     : 1px #94B1FF solid;
+  box-shadow     : 0 0 12px #94B1FF;
+  border-radius: 10px;
+}
+
+audio {
+  box-shadow     : 0 0 12px #94B1FF;
+  background : #94b1ff;
+  border-radius: 15px;
 }
